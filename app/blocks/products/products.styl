@@ -1,0 +1,168 @@
+.products
+	&__in
+		@extends .in
+		clr()
+		overflow hidden
+	&__filter
+		margin-bottom 30px
+	&__w
+		margin-right -58px
+		font-size 0
+
+	&__product
+		margin-right 26px
+		margin-bottom 23px
+		padding-top 29px
+		padding-left 20px
+		padding-right 20px
+		padding-bottom 16px
+		width 213px
+		min-height 272px
+		display inline-block
+		vertical-align top
+		background-color #f5f6fa
+		color #021634
+		font-size 14px
+	&__product_wide
+		padding-right 0
+		padding-left 50px
+		width 460px
+		.products__left
+			float left
+			width 190px
+		.products__right
+			position relative
+			float right
+			width 220px
+		.products__bottom
+			padding-right 24px
+	&__top
+		clr()
+
+	// &__left
+
+	&__title
+		margin-bottom 24px
+		font-family $rB
+		text-transform uppercase
+		color #ff5361
+	&__text
+		margin-bottom 21px
+	&__specs-link
+		position relative
+		color #021634
+		text-decoration none
+		&:after
+			position absolute
+			top 100%
+			left 0
+			right 0
+			width 100%
+			content ""
+			background transparent
+			background linear-gradient(#bababa, #bababa) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / 1em .9em
+			border-bottom 1px solid transparent
+		&:hover
+			&:after
+				display none
+	&__image
+		img
+			max-width 100%
+			height auto
+	&__badge
+		position absolute
+		top -7px
+		right 0
+		padding-top 8px
+		padding-left 23px
+		padding-right 23px
+		padding-bottom 8px
+		background-color #ffb900
+		color #021634
+		text-align center
+		text-transform uppercase
+	&__bottom
+		padding-top 20px
+		text-align right
+	&__basket
+		color #021634
+		text-decoration none
+		line-height 22px
+	&__basket-icon
+		display inline-block
+		vertical-align text-bottom
+		width 26px
+		height 22px
+		fill #ffb900
+
+.filter
+	position relative
+	padding-top 10px
+	padding-left 55px
+	padding-bottom 4px
+	height 53px
+	background-color #e6eaf2
+	clr()
+	&__list
+		font-size 0
+		float left
+	&__item
+		margin-left 26px
+		display inline-block
+		vertical-align top
+		&:first-child
+			margin-left 0
+		&:hover
+			.filter__link
+				@extends .button-arrow
+				&:hover,
+				&:focus
+					background #ffb900
+					&:after
+						bottom -5px
+						width 0
+						height 0
+						border-style solid
+						border-width 8px 6.5px 0 6.5px
+						border-color #ffb900 transparent transparent transparent
+
+	&__link
+		padding-top 7px
+		padding-bottom 9px
+		padding-left 30px
+		padding-right 30px
+		display block
+		font-family $rR
+		font-size 14px
+		color #000000
+		text-transform uppercase
+		text-decoration none
+	&__item_active
+		.filter__link
+			@extends .button-arrow
+
+	&__all
+		position absolute
+		top 0
+		right 0
+		padding-top 16px
+		padding-left 44px
+		padding-right 40px
+		padding-bottom 16px
+		background-color #008bff
+		color #FFF
+		font-family $rR
+		font-size 14px
+		text-transform uppercase
+		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			background-color darken(#008bff, 10)
+	&__all-icon
+		margin-left 12px
+		display inline-block
+		vertical-align middle
+		width 18px
+		height 18px
+		fill #fff
+

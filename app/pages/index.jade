@@ -1,6 +1,25 @@
 extends /blocks/layout-default/layout-default
 
+include /blocks/header/header
+include /blocks/hero/hero
+include /blocks/company/company
+include /blocks/products/products
+include /blocks/additional/additional
+include /blocks/form/form
+
+
+include /blocks/footer/footer
+
+
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Рустехника76 - всё для снегоходной и мототехники';
 
 block content
+	+header()
+	+hero
+	+company()
+	+products()
+	.page__bottom
+		+additional()
+		+form()
+	+footer()

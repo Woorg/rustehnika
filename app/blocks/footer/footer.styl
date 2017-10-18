@@ -1,0 +1,45 @@
+.footer
+	display block
+	background url('../images/general/pattern.png') 0 0 repeat, radial-gradient(circle at 0 0, #fbfdff, #eff1f4)
+	&__in
+		@extends .in
+		padding-top 68px
+		padding-right 146px
+		padding-bottom 100px
+		padding-left 96px
+		font-size 0
+		clr()
+	&__nav,
+	&__address,
+	&__callback
+		margin-right 30px
+		display inline-block
+		vertical-align top
+		font-family $rR
+		font-size 16px
+	&__nav
+		width 233px
+	&__address
+		position relative
+		width 212px
+		&:after
+			position absolute
+			top 1px
+			left -20px
+			retinaSprite($location_group)
+			content ""
+	&__callback
+		margin-top -7px
+		margin-right 0
+		float right
+		width 162px
+	&__callback-button
+		@extends .button
+		padding-top 4px
+		padding-bottom 7px
+		padding-left 14px
+		padding-right 10px
+		font-size 16px
+		border-radius 10px
+	&__phone
+		margin-bottom 13px

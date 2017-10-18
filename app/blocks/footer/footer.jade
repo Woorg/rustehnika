@@ -1,0 +1,20 @@
+mixin footer()
+	footer.footer
+		.footer__in
+			nav.footer__nav.nav.nav_vert
+				ul.nav__list
+					li.nav__item
+						a.nav__link(href="#link") Каталог продукции
+					li.nav__item
+						a.nav__link(href="#link") Оплата и доставка
+					li.nav__item
+						a.nav__link(href="#link") Услуги
+					li.nav__item
+						a.nav__link(href="#link") Контакты
+
+			.footer__address г. Рыбинск, ул. Ленина, 14 пн - пт с 9:00 - 18:00 сб, вс выходной
+			.footer__callback
+				a.footer__phone.phone.phone_second(href="tel:88007895066")
+					+icon('phone-icon', true).phone__icon
+					| 8 800 789 5066
+				a.footer__callback-button(href="#") Обратный звонок

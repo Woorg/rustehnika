@@ -1,0 +1,38 @@
+include ../icon/icon
+
+mixin header()
+	header.header
+		.header__in
+			.header__left
+				.header__row.header__row_left
+					a.header__catalog.menu(href="#")
+						+icon('menu-icon', true).menu__icon
+						| Каталог
+				a.header__phone.phone(href="tel:+88007895066")
+					+icon('phone-icon', true).phone__icon
+					| 8 800 789 50 66
+				a.header__callback(href="#callback") Обратный звонок
+
+			a.header__logo.logo(href="/") Рустехника76
+				.logo__slogan всё для снегоходной и мототехники
+
+			.header__right
+				.header__row.header__row_right
+					a.header__search.h-search(href="#")
+						+icon('search-icon', true).h-search__icon
+					a.header__profile.h-profile(href="#")
+						+icon('user-icon', true).h-profile__icon
+					a.header__basket.h-basket(href="#")
+						+icon('basket-icon', true).h-basket__icon
+						.h-basket__quant 2
+
+				nav.header__nav.nav
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="#link") Оплата и доставка
+						li.nav__item
+							a.nav__link(href="#link") Услуги
+						li.nav__item
+							a.nav__link(href="#link") Новости
+						li.nav__item
+							a.nav__link(href="#link") Контакты

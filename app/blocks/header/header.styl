@@ -1,0 +1,179 @@
+.header
+	display block
+	overflow hidden
+	&__in
+		@extends .in
+		padding-right 0
+		padding-bottom 20px
+		clr()
+	&__left,
+	&__right,
+	&__logo
+		display inline-block
+		vertical-align top
+	&__logo
+		padding-top 25px
+		padding-left 30px
+		+r($t)
+			padding-left 0
+	&__left
+		width 294px
+		float left
+		+r($t)
+			width 235px
+	&__right
+		width 336px
+		float right
+		+r($t)
+			width 235px
+	&__row
+		position relative
+		padding-top 15px
+		padding-bottom 18px
+		+r($t)
+			padding-bottom 10px
+		&:after
+			position absolute
+	&__row_left
+		margin-bottom 8px
+		&:after
+			bottom 0
+			right 0
+			// margin-left -100%
+			width 784px
+			height 2px
+			background-color #bec7d3
+			content ""
+	&__row_right
+		margin-bottom 10px
+		padding-top 15px
+		padding-bottom 10px
+		text-align right
+		+r($t)
+			padding-bottom 5px
+		&:after
+			bottom 0
+			left 30px
+			width 784px
+			height 2px
+			background-color #bec7d3
+			content ""
+			+r($t)
+				left 0
+	&__search,
+	&__profile,
+	&__basket
+		margin-left 11px
+		display inline-block
+		vertical-align baseline
+		&:first-child
+			margin-left 0
+
+	&__phone
+		margin-right 18px
+
+	&__callback
+		text-decoration none
+		color #2e3e57
+		font-size 12px
+
+
+.menu
+	display block
+	font-weight bold
+	font-size 14px
+	color #2e3e57
+	text-transform uppercase
+	text-decoration none
+	&__icon
+		margin-right 15px
+		width 18px
+		height 18px
+		fill #ffb900
+		display inline-block
+		vertical-align middle
+		tr(fill .3s ease)
+	&:hover
+		.menu__icon
+			fill darken(#ffb900, 10)
+
+.logo
+	margin auto
+	width 323px
+	color #ff5361
+	font-size 30px
+	font-weight normal
+	text-align center
+	line-height 1.2
+	text-decoration none
+	+r($t)
+		width 280px
+	&__slogan
+		margin-top 2px
+		display block
+		color #a1abba
+		font-style italic
+		font-size 12px
+
+.phone
+	text-decoration none
+	color #2e3e57
+	font-weight bold
+	text-transform uppercase
+	+r($t)
+		font-size 12px
+
+	&__icon
+		margin-right 10px
+		display inline-block
+		vertical-align bottom
+		width 20px
+		height 20px
+		fill #a1abba
+		+r($t)
+			margin-right 2px
+.phone_second
+	font-size 18px
+	display inline-block
+	vertical-align top
+	.phone__icon
+		margin-right 14px
+
+.h-search,
+.h-profile,
+.h-basket
+	&__icon
+		fill #a1abba
+
+.h-search
+	&__icon
+		width 22px
+		height 22px
+		fill #008bff
+		tr(fill .3s ease)
+	&:hover
+		.h-search__icon
+			fill darken(#008bff, 10)
+.h-profile
+	&__icon
+		width 18px
+		height 20px
+
+.h-basket
+	position relative
+	&__icon
+		width 26px
+		height 22px
+	&__quant
+		position absolute
+		right 0
+		bottom 0
+		width 10px
+		height 10px
+		background-color #ff5361
+		font-size 8px
+		color #fff
+		line-height 11px
+		text-align center
+		border-radius 50%
+
