@@ -11,7 +11,7 @@ mixin header()
 				a.header__phone.phone(href="tel:+88007895066")
 					+icon('phone-icon', true).phone__icon
 					| 8 800 789 50 66
-				a.header__callback(href="#callback") Обратный звонок
+				a.header__callback.header__callback_hidden-m(href="#callback") Обратный звонок
 
 			a.header__logo.logo(href="/") Рустехника76
 				.logo__slogan всё для снегоходной и мототехники
@@ -25,8 +25,8 @@ mixin header()
 					a.header__basket.h-basket(href="#")
 						+icon('basket-icon', true).h-basket__icon
 						.h-basket__quant 2
-
-				nav.header__nav.nav
+				a.header__callback.header__callback_hidden-t.header__callback_vis-m(href="#callback") Обратный звонок
+				nav.header__nav.nav.nav_hidden
 					ul.nav__list
 						li.nav__item
 							a.nav__link(href="#link") Оплата и доставка

@@ -4,13 +4,17 @@ body
 
 .in
 	margin auto
-	width 970px
+	max-width 970px
+	// width 100%
+	// min-width 469px
 	padding-left 15px
 	padding-right 15px
 	+r($t)
-		max-width 760px
+		max-width 759px
 		padding-left 9px
 		padding-right 9px
+	+r($m)
+		max-width 469px
 .page
 	font-family $a
 	font-weight normal
@@ -22,7 +26,8 @@ body
 	padding-top 30px
 	padding-bottom 70px
 	clr()
-
+	+r($t)
+		padding-top 0
 .button
 	border none
 	padding 9px 30px 9px
@@ -71,6 +76,8 @@ body
 	background-color #ffb900
 	// text-decoration none
 	// text-transform uppercase
+	+r($m)
+		padding 5px 8px 5px
 	&:after
 		position absolute
 		bottom -5px
@@ -84,7 +91,7 @@ body
 		content ""
 	&:hover,
 	&:focus
-		background darken(#ffb900, 10)
+		background #ffb900
 
 // titles
 
