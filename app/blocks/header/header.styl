@@ -2,6 +2,7 @@
 	display block
 	overflow hidden
 	&__in
+		position relative
 		@extends .in
 		padding-right 0
 		padding-bottom 20px
@@ -21,16 +22,25 @@
 			padding-left 0
 	&__left
 		width 294px
+		// width ratio-percentage(294, 969)
 		float left
 		+r($t)
 			width 235px
+			// width ratio-percentage(235, 767)
 		+r($m)
 			width 130px
+			// width ratio-percentage(235, 767)
 	&__right
 		width 336px
+		// width ratio-percentage(336,969)
 		float right
+		position absolute
+		top 0
+		right 15px
 		+r($t)
 			width 235px
+			// width ratio-percentage(235, 767)
+
 		+r($m)
 			width 120px
 			text-align right
@@ -82,6 +92,9 @@
 
 	&__phone
 		margin-right 18px
+		// margin-right (ratio(100,18))%
+		+r($d)
+			margin-right 2px
 		+r($m)
 			margin-right 0
 
@@ -129,6 +142,7 @@
 .logo
 	margin auto
 	width 323px
+	width ratio-percentage(323, 970)
 	color #ff5361
 	font-size 30px
 	font-weight normal
@@ -137,6 +151,7 @@
 	text-decoration none
 	+r($t)
 		width 280px
+
 	+r($m)
 		width 190px
 		font-size 16px
@@ -166,6 +181,8 @@
 		width 20px
 		height 20px
 		fill #a1abba
+		+r($d)
+			margin-right 5px
 		+r($t)
 			margin-right 2px
 		+r($m)
