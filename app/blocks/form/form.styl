@@ -2,7 +2,7 @@
 	margin-top 6px
 	padding-top 38px
 	padding-right 24px
-	padding-bottom 55px 
+	padding-bottom 55px
 	padding-left 24px
 	width 292px
 	float right
@@ -26,6 +26,8 @@
 			padding-left 0
 			font-size 18px
 			text-align center
+	&__area
+		clr()
 	&__field
 		margin-bottom 20px
 		border 2px solid #dddddd
@@ -117,3 +119,59 @@
 			width auto
 	// &__field_text
 	// &__field_message
+.form_style-second
+	width 100%
+	float none
+	+r($m)
+		width auto
+
+	.form__title
+		text-align left
+		padding-left 0
+	.form__left
+		float left
+		width 280px
+		+r($t)
+			width 247px
+		+r($m)
+			float none
+			width auto
+	.form__right
+		float right
+		width 400px
+		min-height 211px
+		clr()
+		+r($t)
+			width 378px
+		+r($m)
+			float none
+			width auto
+	.form__privacy
+		position relative
+		top 60px
+		clear left
+		+r($m)
+			position absolute
+			top auto
+			left 0
+			bottom 25px
+			clear none
+			width 190px
+			font-size 12px
+	.form__area
+		position relative
+	.form__submit
+		position absolute
+		bottom 30px
+		left 0
+		display inline-block
+		width 280px
+		+r($t)
+			width 247px
+		+r($m)
+			position static
+			padding-left 0
+			padding-right 0
+			width 130px
+			float right
+			font-size 18px

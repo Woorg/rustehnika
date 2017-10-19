@@ -3,6 +3,7 @@ extends /blocks/layout-default/layout-default
 include /blocks/header/header
 include /blocks/breadcrumbs/breadcrumbs
 include /blocks/catalog/catalog
+include /blocks/pagination/pagination
 
 include /blocks/form/form
 
@@ -19,7 +20,10 @@ block content
 		+breadcrumbs()
 		.main__w
 			h1.main__title сани и прицепы
-			+catalog()
-			
-		+form()
+			.main__catalog
+				+catalog()
+				.main__pagination
+					+pagination()
+				.main__form
+					+form-second()
 	+footer()

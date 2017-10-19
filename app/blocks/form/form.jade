@@ -15,3 +15,22 @@ mixin form()
 				label.form__privacy#privacy-check
 					input.form__checkbox#privacy-check(type="checkbox" name='' value='')
 					| Я согласен на обработку персональных данных.
+
+
+mixin form-second()
+	.form.form_style-second
+		h2.form__title Помогите выбрать
+		.form__area
+			form(action="/", method="post")
+				.form__left
+					.form__field.form__field_text
+						input.form__input(type="text", value="", placeholder="Ваше имя", name="")
+					.form__field.form__field_text
+						input.form__input(type="text", value="", placeholder="Ваш email", name="")
+				.form__right
+					.form__field.form__field_message
+						textarea.form__message(name="" placeholder="Сообщение")
+					input.form__submit(type="submit", value="Отправить")
+				label.form__privacy#privacy-check
+					input.form__checkbox#privacy-check(type="checkbox" name='' value='')
+					| Я согласен на обработку персональных данных.

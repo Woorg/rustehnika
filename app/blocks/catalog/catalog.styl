@@ -1,11 +1,180 @@
 .catalog
+	padding-top 20px
 	display block
-	// &__nav-w
-// 
+	min-height 461px
+	background-color #ffffff
+	+r($m)
+		padding-top 10px
+	&__nav-w
+		margin-bottom 20px
+		// padding-left 80px
+		// padding-right 80px
+		overflow hidden
+		// +r($t)
+		// 	padding-left 30px
+		// 	padding-right 30px
+		+r($m)
+			padding-left 10px
+			padding-right 10px
 	// &__nav
-// 
-	// &__nav-list
-// 
-	// &__nav-item
-// 
-	// &__nav-link
+
+	&__nav-list
+		font-size 0
+		text-align center
+		+r($m)
+			text-align center
+	&__nav-item
+		margin-bottom 2px
+		display inline-block
+		vertical-align top
+		width 32%
+		font-family $rR
+		font-size 14px
+		text-align left
+		+r($m)
+			width 49.5%
+	&__nav-link
+		padding 9px 12px 9px
+		display inline-block
+		vertical-align top
+		color #000000
+		text-decoration none
+		border-radius 10px
+		+r($m)
+			padding 4px 10px 4px
+	&__nav-item_active
+		.catalog__nav-link
+			background-color #ffb900
+	&__list-w
+		overflow hidden
+		+r($t)
+			overflow visible
+	&__list
+		margin-right -65px
+		font-size 0
+		+r($t)
+			margin-right -34px
+			margin-left -34px
+		+r($m)
+			margin-right 0
+			margin-left 0
+	&__item
+		margin-right 27px
+		margin-bottom 20px
+		padding-top 24px
+		padding-left 20px
+		padding-right 20px
+		padding-bottom 24px
+		display inline-block
+		vertical-align top
+		width 215px
+		min-height 418px
+		background-color #f5f6fa
+		font-size 14px
+		color #2e3e57
+		+r($t)
+			margin-right 0
+			width 222px
+		+r($m)
+			margin-right 0
+			margin-bottom 16px
+			padding-left 15px
+			padding-right 15px
+			width 100%
+			min-height 214px
+		&:nth-child(3n-1)
+			padding-left 60px
+			padding-right 60px
+			width 297px
+			+r($t)
+				margin-right 30px
+				margin-left 30px
+				padding-left 20px
+				padding-right 20px
+				width 222px
+			+r($m)
+				margin-left 0
+				margin-right 0
+				padding-left 15px
+				padding-right 15px
+				width 100%
+	&__item-left
+		+r($m)
+			float left
+			width 210px
+	&__item-right
+		+r($m)
+			float right
+			width 200px
+	&__image
+		margin auto
+		margin-bottom 30px
+		width 175px
+		height 140px
+		img
+			max-width 100%
+			height auto
+		+r($m)
+			margin 0
+
+
+	&__item-title
+		margin-bottom 30px
+		font-family $rB
+		color #008bff
+		text-transform uppercase
+		+r($m)
+			margin-bottom 20px
+	&__item-text
+		margin-bottom 20px
+		+r($m)
+			margin-bottom 16px
+	&__specs-link
+		position relative
+		display inline-block
+		vertical-align top
+		margin-bottom 15px
+		color #2e3e57
+		text-decoration none
+		&:after
+			position absolute
+			top 100%
+			left 0
+			right 0
+			width 100%
+			content ""
+			background transparent
+			background linear-gradient(#bababa, #bababa) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / 1em .9em
+			border-bottom 1px solid transparent
+		&:hover
+			&:after
+				display none
+		+r($m)
+			margin-bottom 10px
+	&__specs-list
+		display none
+		margin-bottom 22px
+	&__specs-list_active
+		display block
+	&__specs-item
+		margin-bottom 5px
+	&__price
+		margin-bottom 7px
+		font-weight bold
+		color #ff5361
+	// &__bottom
+
+	&__cart
+		display inline-block
+		vertical-align top
+		color #2e3e57
+		text-decoration none
+	&__cart-icon
+		margin-top -8px
+		margin-left 12px
+		display inline-block
+		vertical-align middle
+		width 26px
+		height 22px
+		line-height 22px
+		fill #ffb900

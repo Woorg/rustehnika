@@ -1,7 +1,22 @@
 .pagination
 	display block
-	// &__list
-
-	// &__item
-
-	// &__link
+	&__list
+		font-style 0
+		text-align center
+	&__item
+		display inline-block
+		vertical-align top
+		font-family $rR
+		font-size 16px
+	&__link
+		width 43px
+		height 43px
+		display block
+		color #383838
+		text-align center
+		text-decoration none
+		line-height 42px
+		border-radius 50%
+	&__item_active
+		.pagination__link
+			background-color #e6eaf2
