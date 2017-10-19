@@ -1,0 +1,26 @@
+.breadcrumbs
+	padding-bottom 17px
+	text-align center
+	&__list
+		font-size 0
+	&__item
+		position relative
+		margin-right 15px
+		display inline-block
+		vertical-align top
+		&:after
+			position absolute
+			top 50%
+			right -10px
+			margin-top -10px
+			font-size 14px
+			color #008bff
+			content '>'
+		&:last-child
+			&:after
+				display none
+	&__link
+		color #008bff
+		width 120px
+		font-size 14px
+		text-decoration none

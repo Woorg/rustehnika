@@ -17,29 +17,24 @@
 		vertical-align top
 	&__logo
 		padding-top 25px
-		padding-left 30px
 		+r($t)
 			padding-left 0
 	&__left
 		width 294px
-		// width ratio-percentage(294, 969)
-		float left
 		+r($t)
 			width 235px
-			// width ratio-percentage(235, 767)
 		+r($m)
 			width 130px
-			// width ratio-percentage(235, 767)
 	&__right
 		width 336px
-		// width ratio-percentage(336,969)
 		float right
 		position absolute
 		top 0
 		right 15px
+		+r($d)
+			max-width 280px
 		+r($t)
 			width 235px
-			// width ratio-percentage(235, 767)
 
 		+r($m)
 			width 120px
@@ -57,7 +52,6 @@
 		&:after
 			bottom 0
 			right 0
-			// margin-left -100%
 			width 784px
 			height 2px
 			background-color #bec7d3
@@ -71,7 +65,6 @@
 			padding-bottom 5px
 		+r($m)
 			margin-bottom 5px
-
 		&:after
 			bottom 0
 			left 30px
@@ -92,7 +85,6 @@
 
 	&__phone
 		margin-right 18px
-		// margin-right (ratio(100,18))%
 		+r($d)
 			margin-right 2px
 		+r($m)
@@ -116,6 +108,9 @@
 	&__callback_vis-m
 		+r($m)
 			display inline-block
+
+// Menu
+
 .menu
 	display block
 	font-weight bold
@@ -139,6 +134,8 @@
 		.menu__icon
 			fill darken(#ffb900, 10)
 
+// Logo
+
 .logo
 	margin auto
 	width 323px
@@ -149,9 +146,10 @@
 	text-align center
 	line-height 1.2
 	text-decoration none
+	+r($d)
+		width 323px
 	+r($t)
 		width 280px
-
 	+r($m)
 		width 190px
 		font-size 16px
@@ -163,6 +161,9 @@
 		font-size 12px
 		+r($m)
 			font-size 10px
+
+
+// Phone
 
 .phone
 	text-decoration none
@@ -193,6 +194,8 @@
 	vertical-align top
 	.phone__icon
 		margin-right 14px
+
+// Right side blocks
 
 .h-search,
 .h-profile,
@@ -231,4 +234,3 @@
 		line-height 11px
 		text-align center
 		border-radius 50%
-

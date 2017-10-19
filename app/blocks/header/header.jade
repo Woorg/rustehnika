@@ -26,7 +26,7 @@ mixin header()
 						+icon('basket-icon', true).h-basket__icon
 						.h-basket__quant 2
 				a.header__callback.header__callback_hidden-t.header__callback_vis-m(href="#callback") Обратный звонок
-				nav.header__nav.nav.nav_hidden
+				nav.header__nav.nav.nav_hidden-m
 					ul.nav__list
 						li.nav__item
 							a.nav__link(href="#link") Оплата и доставка
@@ -36,3 +36,14 @@ mixin header()
 							a.nav__link(href="#link") Новости
 						li.nav__item
 							a.nav__link(href="#link") Контакты
+
+			nav.header__nav.nav.nav_hidden.nav_vis-m
+				ul.nav__list
+					li.nav__item
+						a.nav__link(href="#link") Оплата и доставка
+					li.nav__item
+						a.nav__link(href="#link") Услуги
+					li.nav__item
+						a.nav__link(href="#link") Новости
+					li.nav__item
+						a.nav__link(href="#link") Контакты

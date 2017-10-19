@@ -4,22 +4,47 @@ body
 
 .in
 	margin auto
-	max-width 970px
 	width 100%
+	max-width 970px
+	min-width 480px
 	padding-left 15px
 	padding-right 15px
+	overflow hidden
+	+r($d)
+		width 100%
+		max-width 970px
+		min-width 970px
 	+r($t)
+		width 100%
 		max-width 759px
+		min-width 759px
 		padding-left 9px
 		padding-right 9px
 	+r($m)
+		width 100%
 		max-width 469px
+		min-width 469px
 .page
+	min-width 469px
 	font-family $a
 	font-weight normal
 	font-size 14px
 	line-height 1.4
 	color $text
+	clr()
+	+r($d)
+		width 100%
+		max-width 970px
+		min-width 970px
+	+r($t)
+		width 100%
+		max-width 759px
+		min-width 759px
+	+r($m)
+		width 100%
+		max-width 469px
+		min-width 469px
+
 .page__bottom
 	@extends .in
 	padding-top 30px
@@ -27,6 +52,36 @@ body
 	clr()
 	+r($t)
 		padding-top 0
+	+r($m)
+		padding-bottom 0
+		display flex
+		flex-direction column-reverse
+
+.main
+	@extends .in
+	clr()
+.main__w
+	position relative
+	padding-top 60px
+	&:after
+		position absolute
+		z-index -1
+		top 0
+		left 0
+		right 0
+		width 942px
+		height 166px
+		background-color #e6eaf2
+		content ''
+
+.main__title
+	margin-bottom 26px
+	color #2e3e57
+	font-weight bold
+	text-align center
+	text-transform uppercase
+
+
 .button
 	border none
 	padding 9px 30px 9px
@@ -170,4 +225,3 @@ body
 		text-decoration none
 		&:hover
 			text-decoration underline
-
