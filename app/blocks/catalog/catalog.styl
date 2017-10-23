@@ -1,50 +1,4 @@
 .catalog
-	padding-top 20px
-	display block
-	min-height 461px
-	background-color #ffffff
-	+r($m)
-		padding-top 10px
-	&__nav-w
-		margin-bottom 20px
-		// padding-left 80px
-		// padding-right 80px
-		overflow hidden
-		// +r($t)
-		// 	padding-left 30px
-		// 	padding-right 30px
-		+r($m)
-			padding-left 10px
-			padding-right 10px
-	// &__nav
-
-	&__nav-list
-		font-size 0
-		text-align center
-		+r($m)
-			text-align center
-	&__nav-item
-		margin-bottom 2px
-		display inline-block
-		vertical-align top
-		width 32%
-		font-family $rR
-		font-size 14px
-		text-align left
-		+r($m)
-			width 49.5%
-	&__nav-link
-		padding 9px 12px 9px
-		display inline-block
-		vertical-align top
-		color #000000
-		text-decoration none
-		border-radius 10px
-		+r($m)
-			padding 4px 10px 4px
-	&__nav-item_active
-		.catalog__nav-link
-			background-color #ffb900
 	&__list-w
 		overflow hidden
 		+r($t)
@@ -116,8 +70,6 @@
 			height auto
 		+r($m)
 			margin 0
-
-
 	&__item-title
 		margin-bottom 30px
 		font-family $rB
@@ -145,6 +97,7 @@
 			content ""
 			background transparent
 			background linear-gradient(#bababa, #bababa) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / 1em .9em
+			background linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,1) 100%)
 			border-bottom 1px solid transparent
 		&:hover
 			&:after
@@ -163,7 +116,6 @@
 		font-weight bold
 		color #ff5361
 	// &__bottom
-
 	&__cart
 		display inline-block
 		vertical-align top
@@ -178,3 +130,65 @@
 		height 22px
 		line-height 22px
 		fill #ffb900
+
+.catalog_sub
+	.catalog__list-w
+		+r($t)
+			overflow hidden
+	.catalog__list
+		margin-right -33px
+		+r($t)
+			margin-right -33px
+			margin-left 0
+		+r($m)
+			margin-right -33px
+			// margin-left -17px
+	.catalog__item
+		margin-right 26px
+		padding-left 20px
+		padding-right 20px
+		min-height 442px
+		+r($m)
+			margin-right 20px
+			width 215px
+			min-height 375px
+		&:nth-child(3n-1)
+			padding-left 20px
+			padding-right 20px
+			width 215px
+			+r($t)
+				margin-left 0
+				margin-right 0
+				padding-left 20px
+				padding-right 20px
+				width 222px
+			+r($m)
+				margin-left 0
+				margin-right 0
+				padding-left 20px
+				padding-right 20px
+				width 215px
+		&:nth-child(2n-1)
+			// padding-left 60px
+			// padding-right 60px
+			padding-left 40px
+			padding-right 40px
+			width 294px
+			+r($t)
+				padding-left 30px
+				padding-right 30px
+			+r($m)
+				padding-left 20px
+				padding-right 20px
+				width 215px
+	.catalog__image
+		+r($m)
+			margin-bottom 30px
+	.catalog__item-left
+		+r($m)
+			float none
+			width 100%
+	.catalog__item-right
+		+r($m)
+			float none
+			width 100%

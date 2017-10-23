@@ -3,44 +3,96 @@
 	padding-bottom 50px
 	overflow hidden
 	clr()
-.main__w
-	position relative
-	padding-top 60px
-	&:after
-		position absolute
-		z-index -1
-		top 0
-		left 0
-		right 0
-		width 100%
-		height 166px
-		background-color #e6eaf2
-		content ''
-	+r($m)
-		padding-top 10px
-.main__title
-	margin-bottom 26px
-	color #2e3e57
-	font-weight bold
-	text-align center
-	text-transform uppercase
-	+r($m)
-		margin-bottom 8px
-
-.main__catalog
-	margin auto
-	width 780px
-	+r($t)
-		width 660px
-	+r($m)
-		width 450px
-
-.main__pagination
-	margin-bottom 20px
-
-.main__form
-	margin-left -30px
-	margin-right -30px
-	+r($m)
-		margin-right 0
+	&__w
+		position relative
+		padding-top 60px
+		&:after
+			position absolute
+			z-index -1
+			top 0
+			left 0
+			right 0
+			width 100%
+			height 166px
+			background-color #e6eaf2
+			content ''
+		+r($m)
+			padding-top 10px
+	&__title
+		margin-bottom 26px
+		color #2e3e57
+		font-weight bold
+		text-align center
+		text-transform uppercase
+		+r($m)
+			margin-bottom 8px
+	&__content
+		margin auto
+		padding-top 20px
+		width 780px
+		min-height 461px
+		background-color #ffffff
+		+r($t)
+			width 660px
+			// width auto
+		+r($m)
+			padding-top 10px
+			width 450px
+.main__content_sub
+		+r($t)
+			width 100%
+		+r($m)
+			width 450px
+	.main__row
+		position relative
+		clr()
+	.main__right
+		float right
+		width 536px
+		+r($t)
+			position static
+		+r($m)
+			float none
+			width auto
+			font-weight normal
+	.main__left
+		float left
+		width 212px
+		clear left //
+		+r($t)
+			width 200px
+		+r($m)
+			float none
+			width 160px
+	.main__cat-desc
+		+r($t)
+			display none
+		+r($m)
+			position absolute
+			top 0
+			left 180px
+			display block
+	.main__side-nav
+		float left
+		// float none
+		width 212px
+		+r($t)
+			float none
+			width 100%
+		+r($m)
+			float none
+			width 160px
+	.main__side-nav_tablet
+		display none
+		+r($t)
+			display block
+		+r($m)
+			display none
+	.main__pagination
+		margin-bottom 20px
+	.main__form
 		margin-left 0
+		margin-right 0
+		+r($m)
+			margin-right 0
+			margin-left 0

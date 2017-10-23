@@ -5,3 +5,21 @@ mixin breadcrumbs()
 				a.breadcrumbs__link(href="#link") Главная
 			li.breadcrumbs__item
 				a.breadcrumbs__link(href="#link") Каталог
+
+mixin breadcrumbs-subcategory()
+	.breadcrumbs
+		ul.breadcrumbs__list
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#link") Главная
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#link") Каталог
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#link") Снегоходы
+
+mixin breadcrumbs-delivery()
+	.breadcrumbs
+		ul.breadcrumbs__list
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#link") Главная
+			li.breadcrumbs__item
+				a.breadcrumbs__link(href="#link") Оплата и доставка

@@ -27,7 +27,13 @@ import 'slick-carousel';
 		$mainProdSpecsLink.on('click', function () {
 			$(this).next().toggleClass('products__specs-list_active');
 		});
+
+		// catalog product specs
+
+		const $catProdLnk = $('.catalog__specs-link');
+		$catProdLnk.on('click', function () {
+			$(this).next().toggleClass('catalog__specs-list_active');
+		});
 	});
 
 })(jQuery);
-

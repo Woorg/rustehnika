@@ -1,0 +1,59 @@
+.side-nav
+	&__list
+		background-color #f4f8ff
+		border-radius 15px
+		font-size 0
+		+r($t)
+			justify()
+		+r($m)
+			text-align-last auto
+			text-align left
+			font-size initial
+			line-height 1.2
+			&:after
+				display none
+
+	&__item
+		margin-bottom 2px
+		display block
+		font-size 14px
+		+r($t)
+			display inline-block
+			vertical-align top
+		+r($m)
+			display block
+		&:first-child
+			.side-nav__link
+				border-radius 15px 15px 0 0
+				+r($t)
+					border-radius 15px 0 0 15px
+				+r($m)
+					border-radius 15px 15px 0 0
+		&:last-child
+			.side-nav__link
+				border-radius 0 0 15px 15px
+				+r($t)
+					border-radius 0 15px 15px 0
+				+r($m)
+					border-radius 0 0 15px 15px
+
+
+	&__link
+		padding-top 20px
+		padding-right 30px
+		padding-left 40px
+		padding-bottom 18px
+		display block
+		color #2e3e57
+		text-decoration none
+		&:hover
+			background-color #c1d9ff
+		+r($t)
+			padding-left 20px
+			padding-right 20px
+		+r($m)
+			padding-left 10px
+			padding-right 10px
+	&__item_active
+		.side-nav__link
+			background-color #c1d9ff

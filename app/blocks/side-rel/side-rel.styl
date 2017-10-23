@@ -1,0 +1,41 @@
+.side-rel
+	display block
+	&__title
+		margin-bottom 20px
+		padding-top 11px
+		padding-left 10px
+		padding-right 10px
+		padding-bottom 8px
+		background-color #ffb900
+		font-size 16px
+		color #2e3e57
+		+r($t)
+			padding-top 6px
+			padding-bottom 5px
+	// &__list
+
+	&__item
+		margin-bottom 24px
+		font-size 14px
+		border-bottom 2px solid #ffb900
+		&:last-child
+			border-bottom 2px solid transparent
+		+r($m)
+			display none
+			&:first-child
+				display block
+	&__link
+		display block
+		text-decoration none
+	&__item-title
+		margin-bottom 20px
+		color #008bff
+		text-transform uppercase
+	&__item-text
+		margin-bottom 20px
+		color #2e3e57
+	&__item-img
+		margin-bottom 20px
+		img
+			max-width 100%
+			height auto
