@@ -1,2 +1,28 @@
+include ../icon/icon
+
 mixin contacts()
 	.contacts
+		.contacts__top
+			.contacts__address г. Рыбинск, ул. Ленина, 14 пн - пт с 9:00 - 18:00 сб, вс выходной
+			.contacts__phones
+				+icon('phone-icon', true).contacts__phones-icon 
+				a.contacts__phone(href="tel:88007895066") 8 800 789 5066
+				a.contacts__phone(href="tel:88007895061") 8 800 789 5061
+				a.contacts__phone(href="tel:88007895060") 8 800 789 5060
+				
+		ul.contacts__list
+			li.contacts__item.contacts__item_first
+				h2.contacts__title юридический адрес
+				.contacts__text 152934, Россия, Ярославская обл., г. Рыбинск, ул. Герцена, д.37<br/>Почтовый адрес: 152934, г. Рыбинск, ул. Герцена, д.37, магазин "Снегоход-Сервис"<br/>Код отрасли по Общероссийскому классификатору отрасли народного хозяйства: ОКОНХ 50.40.2<br/>Код отрасли по Общероссийскому классификатору предприятия и организации: ОКПО 98119684
+			li.contacts__item.contacts__item_second
+				h2.contacts__title реквизиты
+				.contacts__text Общество с ограниченной ответственностью<br/>ООО « Торговая фирма « Снегоход-Сервис »»<br/>ИНН: 7610073563<br/>КПП: 761001001<br/>ОГРН: 1077610001259<br/>Расчетный счет: 40702810202000006591<br/>Банк: Ярославский филиал <br/>ПАО «Промсвязьбанк» г. Ярославль<br/>БИК: 047888760<br/>Корр. счет: 30101810300000000760
+			li.contacts__item.contacts__item_third
+				h2.contacts__title e-mail
+				.contacts__text 
+					a.contacts__email(href="mailto:a_matveenko@mail.ru") a_matveenko@mail.ru
+					a.contacts__email(href="mailto:firm@snegoxod.ru") firm@snegoxod.ru
+					
+		.contacts__map#map
+				
+		
