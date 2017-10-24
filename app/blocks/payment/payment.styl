@@ -1,0 +1,42 @@
+.payment
+	display block
+	margin-bottom 50px
+	&__title
+		margin-bottom 30px
+		@extends .title
+	&__list
+		font-style 0
+	&__item
+		position relative
+		padding-left 84px
+		width 49.5%
+		min-height 66px
+		display inline-block
+		vertical-align top
+		&:after,
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ''
+		&:before
+			width 62px
+			height 62px
+			background-color #e8e8e8
+			border 2px solid #c6c6c6
+			border-radius 50%
+		span
+			position absolute
+			top 50%
+			left 84px
+			transform translateY(-50%)
+	&__item_bank-account
+		&:after
+			top -1px
+			left 15px
+			retinaSprite($bank_account_group)
+	&__item_plastic-card
+		&:after
+			top -8px
+			left 7px
+			retinaSprite($plastic_card_group)

@@ -2,12 +2,7 @@
 	display block
 	&__nav-w
 		margin-bottom 20px
-		// padding-left 80px
-		// padding-right 80px
 		overflow hidden
-		// +r($t)
-		// 	padding-left 30px
-		// 	padding-right 30px
 		+r($m)
 			padding-left 10px
 			padding-right 10px
@@ -26,17 +21,24 @@
 		font-family $rR
 		font-size 14px
 		text-align left
+		text-overflow ellipsis
+		overflow hidden
+		border-radius 10px
 		+r($m)
 			width 49.5%
 	&__link
 		padding 9px 12px 9px
+		// display inline-block
 		display inline-block
 		vertical-align top
 		color #000000
 		text-decoration none
 		border-radius 10px
+		text-overflow ellipsis
+		overflow hidden
 		+r($m)
 			padding 4px 10px 4px
 	&__item_active
 		.cat-nav__link
+			display inline-block
 			background-color #ffb900

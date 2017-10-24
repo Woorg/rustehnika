@@ -5,27 +5,21 @@ include /blocks/breadcrumbs/breadcrumbs
 
 include /blocks/side/side
 include /blocks/cat-nav/cat-nav
-
 include /blocks/side-rel/side-rel
-include /blocks/content/content
-include /blocks/delivery/delivery
-include /blocks/payment/payment
-include /blocks/payment-steps/payment-steps
 
-
-include /blocks/pagination/pagination
+include /blocks/contacts/contacts
 include /blocks/footer/footer
 
 
 block head
-	- var pageTitle = 'Рустехника76 - оплата и доставка';
+	- var pageTitle = 'Рустехника76 - Контакты';
 
 block content
 	+header()
 	main.main
-		+breadcrumbs-delivery()
+		+breadcrumbs-contacts()
 		.main__w
-			h1.main__title ОПЛАТА И ДОСТАВКА
+			h1.main__title Контакты
 			.main__content.main__content_sub
 				.main__cat-nav
 					+cat-nav()
@@ -34,8 +28,5 @@ block content
 						+side()
 							+side-rel-deliv()
 					.main__right
-						+delivery()
-						+payment()
-	+payment-steps()
-	
+                        +contacts()
 	+footer()

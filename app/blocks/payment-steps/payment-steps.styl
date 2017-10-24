@@ -1,0 +1,231 @@
+.payment-steps
+	margin-top -50px
+	overflow hidden
+	&__in
+		@extends .in
+		padding-bottom 40px
+	&__title
+		margin-bottom 30px
+		@extends .title
+		display none
+		+r($t)
+			display block
+		+r($m)
+			display block
+	&__list
+		margin-bottom 50px
+	&__item
+		position relative
+		margin-left 80px
+	&__num
+		position absolute
+		top 0
+		left 0
+		font-family $bI
+		font-size 72px
+		color #cbcfd5
+		line-height 1
+		+r($m)
+			color #2e3e57
+			opacity .5
+	&__text
+		position relative
+		font-style 16px
+		&:first-letter
+			display inline-block
+			vertical-align baseline
+			font-family $bI
+			font-size 48px
+			line-height 18px
+			color #2e3e57
+			+r($t)
+				font-size 48px
+			// +r($m)
+			// 	font-size 24px
+	&__image
+		img
+			max-width 100%
+			height auto
+
+	&__item_first
+		position relative
+		margin-left 48px
+		padding-top 34px
+		padding-left 112px
+		padding-right 186px
+		+r($t)
+			padding-top 45px
+		+r($m)
+			margin 0
+			margin-bottom 90px
+			padding-left 80px
+			padding-right 0
+			&:before
+				position absolute
+				z-index 0
+				bottom -65px
+				right 290px
+				width 758px
+				height 163px
+				background-color #c1d9ff
+				content ''
+
+		.payment-steps__num
+			+r($m)
+				opacity .5
+				color #2e3e57
+		.payment-steps__text
+			position relative
+			padding-bottom 30px
+			&:after
+				position absolute
+				bottom -28px
+				left 96px
+				width 52px
+				height 1px
+				background-color #2e3e57
+				content ''
+				+r($t)
+					left 86px
+				+r($m)
+					left -65px
+					bottom -90px
+		.payment-steps__image
+			position absolute
+			top 92px
+			left -160px
+			width 307px
+			height 185px
+			+r($t)
+				top 70px
+				left -192px
+			+r($m)
+				left 0
+				display none
+			img
+				position relative
+				z-index 1
+				+r($m)
+					display none
+			&:after
+				position absolute
+				z-index 0
+				bottom -18px
+				right -37px
+				width 758px
+				height 163px
+				background-color #c1d9ff
+				content ''
+				+r($m)
+					z-index -1
+					top -50px
+					right 150px
+					bottom auto
+					display none
+
+	&__item_second
+		margin-left 455px
+		margin-bottom 80px
+		padding-left 110px
+		padding-right 80px
+		padding-bottom 70px
+		&:after
+			position absolute
+			bottom 0
+			left 0
+			width 1px
+			height 52px
+			background-color #2e3e57
+			content ''
+			+r($t)
+				left 40px
+			+r($m)
+				left 90px
+				bottom 40px
+		+r($t)
+			margin-left 313px
+			padding-left 95px
+			padding-right 0
+			padding-top 20px
+		+r($m)
+			margin-left 65px
+			margin-bottom 50px
+			padding-left 110px
+			padding-top 15px
+			padding-bottom 30px
+	&__item_third
+		margin-bottom 80px
+		padding-top 34px
+		+r($t)
+			margin-left 0
+			margin-right 250px
+			padding-left 80px
+		+r($m)
+			margin-right 250px
+			padding-left 65px
+			padding-top 80px
+		.payment-steps__text
+			margin-left 100px
+			margin-right 455px
+			+r($t)
+				margin-left 0
+				margin-right 0
+	&__item_fourth
+		position relative
+		margin-left 162px
+		padding-top 20px
+		&:before
+			position absolute
+			top 0
+			left 370px
+			width 52px
+			height 1px
+			background-color #2e3e57
+			content ''
+			+r($m)
+				top -20px
+				left 0
+		+r($t)
+			margin-left 80px
+			padding-left 125px
+		+r($m)
+			margin-top -180px
+			margin-left 214px
+			margin-right 0
+			padding-top 40px
+			padding-left 90px
+		.payment-steps__text
+			margin-left 116px
+			margin-right 240px
+			+r($t)
+				margin-left 0
+				margin-right 125px
+			+r($m)
+				margin-right 0
+		.payment-steps__image
+			position absolute
+			top -167px
+			left auto
+			right 80px
+			+r($t)
+				right 0
+				width 282px
+				height 142px
+			+r($m)
+				top -136px
+				width 211px
+				height 106px
+			img
+				position relative
+				z-index 1
+			&:after
+				position absolute
+				top -18px
+				left 100px
+				width 214px
+				height 214px
+				background-color #f5f6fa
+				border-radius 50%
+				content ''
+				+r($m)
+					top -48px
