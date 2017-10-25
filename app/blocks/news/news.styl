@@ -1,0 +1,86 @@
+.news
+	display block
+	&__item
+		margin-bottom 30px
+		padding-top 30px
+		padding-bottom 24px
+		width 620px
+		background-color #e6eaf2
+		+r($t)
+			margin-right -30px
+			width 100%
+		+r($m)
+			margin-right 0
+		&:nth-child(odd)
+			+r($t)
+				padding-left 20px
+			.news__image
+				img
+					margin-left -10px
+					+r($m)
+						margin-left 0
+		&:nth-child(even)
+			position relative
+			z-index 1
+			padding-top 60px
+			padding-left 70px
+			padding-bottom 20px
+			background-color transparent
+			+r($t)
+				padding-left 20px
+			+r($m)
+				padding-top 30px
+			&:after
+				position absolute
+				z-index -1
+				top 0
+				left 0
+				bottom 0
+				width 134px
+				height 100%
+				background-color #e6eaf2
+				content ''
+			.news__content
+				float left
+				width 225px
+				+r($t)
+					width 200px
+			.news__image
+				margin-right 0
+				float right
+				img
+					margin-left 0
+	&__link
+		display block
+		text-decoration none
+		color initial
+		clr()
+	&__image,
+	&__content
+		float left
+	&__image
+		position relative
+		margin-right 16px
+		width 300px
+		height 240px
+		+r($t)
+			margin-right 6px
+			width 233px
+			height 200px
+		+r($m)
+			margin-right 16px
+			width 210px
+			height 170px
+		img
+			max-width 100%
+			height auto
+	&__content
+		width 250px
+		+r($t)
+			width 206px
+		+r($m)
+			width 196px
+	&__title
+		margin-bottom 20px
+		@extends .title
+	// &__text
