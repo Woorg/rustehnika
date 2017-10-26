@@ -1,2 +1,151 @@
 .card
+	position relative
 	display block
+	width 617px
+	+r($t)
+		width auto
+	&__top
+		clr()
+	&__to-cart
+		float right
+		display inline-block
+		vertical-align top
+		color #2e3e57
+		text-decoration none
+		+r($m)
+			font-style 12px
+	&__to-cart-icon
+		margin-top -8px
+		margin-left 12px
+		display inline-block
+		vertical-align middle
+		width 26px
+		height 22px
+		line-height 22px
+		fill #ffb900
+	&__title
+		margin-bottom 28px
+		max-width 60%
+		float left
+		font-size 16px
+		color #ff5361
+		text-transform uppercase
+		+r($m)
+			max-width 100%
+			max-height 46px
+			overflow hidden
+	&__col-w
+		font-size 0
+	&__col
+		margin-left 28px
+		display inline-block
+		vertical-align top
+		width 290px
+		&:first-child
+			margin-left 0
+			+r($t)
+				width 270px
+			+r($m)
+				position relative
+		&:last-child
+			+r($t)
+				width 250px
+		+r($t)
+			margin-left 14px
+		+r($m)
+			margin-left 0
+			width auto
+	&__image
+		position relative
+		margin-bottom 20px
+		height 242px
+		// text-align center
+		img
+			position absolute
+			top 50%
+			left 50%
+			max-width 100%
+			height auto
+			transform translate(-50%,-50%)
+	&__specs
+		position relative
+		font-size 14px
+		+r($m)
+			margin-top 220px
+	&__specs-title
+		margin-bottom 10px
+		border-bottom 2px solid #2e3e57
+		padding-bottom 14px
+		color #2e3e57
+		font-weight bold
+		text-transform uppercase
+	&__specs-list
+		position relative
+		&:before
+			position absolute
+			top 0
+			left 54%
+			width 1px
+			height 52px
+			background-color #c1d9ff
+			content ''
+			+r($t)
+				left 56%
+	&__specs-item
+		margin-bottom 10px
+		font-size 0
+	&__specs-term,
+	&__specs-desc
+		display inline-block
+		vertical-align top
+		width 49.5%
+		font-size 14px
+	&__specs-term
+		// padding-right 15px
+		width 60%
+	&__specs-desc
+		// padding-left 15px
+		width 40%
+	&__desc
+		position relative
+		margin-bottom 30px
+		font-size 14px
+		&:after
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			height 35px
+			background #Fff
+			background linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.7) 35%, #fff 100%)
+			content ''
+		+r($m)
+			position absolute
+			top 320px
+			left 0
+			right 0
+			max-height 226px
+			height 226px
+			font-size 12px
+			overflow hidden
+	&__order-w
+		margin-top 25px
+		text-align center
+	&__order
+		@extends .button-big
+		padding-top 26px
+		padding-right 80px
+		padding-bottom 26px
+		padding-left 80px
+		font-size 14px
+		font-weight normal
+		text-transform uppercase
+		text-align center
+		+r($t)
+			padding-left 60px
+			padding-right 60px
+		+r($m)
+			padding-top 16px
+			padding-bottom 16px
+			padding-left 30px
+			padding-right 30px

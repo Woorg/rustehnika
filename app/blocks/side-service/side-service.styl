@@ -1,0 +1,52 @@
+.side-service
+	display block
+	// &__list
+
+	&__item
+		position relative
+		z-index 1
+		margin-bottom 25px
+		padding-left 14px
+		padding-right 14px
+		&:after
+			position absolute
+			z-index -1
+			top 0
+			left 0
+			bottom 0
+			height auto
+			background-color #e6eaf2
+			content ''
+	&__item_first
+		&:after
+			bottom 70px
+			width 134px
+		.side-service__image
+			width 206px
+			height 130px
+	&__item_second
+		&:after
+			bottom 10px
+			width 42px
+		.side-service__image
+			width 185px
+			height 159px
+	&__image
+		margin 0 auto 15px
+		width 185px
+		height 159px
+		img
+			max-width 100%
+			height auto
+	// &__content
+	&__title
+		margin-bottom 16px
+		@extends .title
+		display inline-block
+		vertical-align top
+		font-size 18px
+		text-decoration none
+		&:hover
+			text-decoration underline
+	&__text
+		font-size 12px

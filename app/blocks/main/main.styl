@@ -85,8 +85,17 @@
 	.main__side-nav_tablet
 		display none
 		+r($t)
+			margin-bottom 20px
 			display block
 		+r($m)
+			display none
+	.main__rel
+		display none
+		+r($t)
+			display block
+	.main__service
+		display block
+		+r($t)
 			display none
 	.main__pagination
 		margin-bottom 20px
@@ -96,3 +105,15 @@
 		+r($m)
 			margin-right 0
 			margin-left 0
+
+	.main__card
+		margin-bottom 30px
+	.main__relative
+		float left
+		margin-left 30px
+		+r($t)
+			margin-left 20px
+		+r($m)
+			float none
+			margin-left 0
+			clear both

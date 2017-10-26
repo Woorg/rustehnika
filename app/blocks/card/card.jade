@@ -1,3 +1,39 @@
+include ../icon/icon
+
 mixin card()
-	+b.card&attributes(attributes)
-		block
+	.card
+		.card__top
+			h2.card__title снегоходы «буран а»
+			a.card__to-cart(href="#cart") Добавить в корзину
+				+icon('basket-icon', true).card__to-cart-icon
+		.card__col-w
+			.card__col
+				.card__image
+					img(src="assets/images/content/card-img-1.jpg", alt="")
+				.card__specs
+					h2.card__specs-title технические характеристики
+					ul.card__specs-list
+						li.card__specs-item
+							.card__specs-term Габаритные размеры
+							.card__specs-desc 2700*910*1335
+						li.card__specs-item
+							.card__specs-term Масса, кг
+							.card__specs-desc 285
+						li.card__specs-item
+							.card__specs-term Мощность, л.с.
+							.card__specs-desc РМЗ-640
+						li.card__specs-item
+							.card__specs-term Габаритные размеры
+							.card__specs-desc 2700*910*1335
+						li.card__specs-item
+							.card__specs-term Масса, кг
+							.card__specs-desc 285
+						li.card__specs-item
+							.card__specs-term Мощность, л.с.
+							.card__specs-desc РМЗ-640
+			.card__col
+				.card__desc
+					p Снегоходы Буран А являются базовыми в своей серии. Данная машина весьма неприхотлива (может работать даже при самых низких температурах) и буквально незаменима, ведь обеспечивает проходимость практически в любых условиях: ей нипочем ни глубокий снег, ни лесные тропы, ни суровые холода. Буран А приспособлены для перевозки как людей, так и грузов, ведь удобная конструкция, включающая в себя две достаточно короткие гусеницы, обеспечивает большую площадь опорной поверхности. Покупатели могут не волноваться о мобильности данной серии, так как уменьшенное давление на поверхность позволяют водителю маневрировать в любой обстановке!
+				.card__order-w
+					a.card__order(href="#order") оформить заказ
+		
