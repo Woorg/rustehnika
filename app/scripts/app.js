@@ -55,32 +55,69 @@ import 'jquery-ui/ui/widgets/spinner';
 
 		/**
 		 *
+		 * relative product specs
+		 *
+		 */
+
+		const $relProdLnk = $('.relative__specs-link');
+		$relProdLnk.on('click', function () {
+			$(this).next().toggleClass('relative__specs-list_active');
+		});
+
+		/**
+		 *
 		 * Basket quant spinner
 		 *
 		 */
 
-		const quantInput = $('.quant__input');
-		const quantUp = $('.quant__button_up');
-		const quantDown = $('.quant__button_down');
+		const $quantInput = $('.quant__input');
+		const $quantUp = $('.quant__button_up');
+		const $quantDown = $('.quant__button_down');
 
 
-		quantInput.click(function() {
+		$quantInput.click(function() {
 		   return false;
 		})
 
-		quantInput.spinner({
+		$quantInput.spinner({
 		   max: 1000,
-		   min: 0,
+		   min: 1,
 		   step: 1
 		});
 
-		quantDown.click(function() {
+		$quantDown.click(function() {
 		   $(this).parent().find('.quant__input').spinner('stepDown');
 		   return false;
 		});
-		quantUp.click(function() {
+		$quantUp.click(function() {
 		   $(this).parent().find('.quant__input').spinner('stepUp');
 		   return false;
+		});
+
+
+		/**
+		 *
+		 * Tabs
+		 *
+		 */
+
+		const tabsNavLink = $('.filter__item a');
+		const tabsNavLinkActive = 'filter__item_active';
+		const tab = $('.tabs__tab');
+		const tabActive = 'tabs__tab_active';
+
+		tabsNavLink.click(function (event) {
+			event.preventDefault();
+			$(this).parent().addClass(tabsNavLinkActive);
+			$(this).parent().siblings().removeClass(tabsNavLinkActive);
+			const tabCurrent = $(this).attr('href');
+			tab.not(tabCurrent).removeClass(tabActive).hide();
+			$(tabCurrent).fadeIn(50).addClass(tabActive).show();
+
+			// carouselSecond.reloadSlider();
+
+			console.log(tabCurrent);
+
 		});
 
 
