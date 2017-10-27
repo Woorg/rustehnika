@@ -12,8 +12,8 @@ mixin form()
 					.form__field.form__field_message
 						textarea.form__message(name="" placeholder="Сообщение")
 					input.form__submit(type="submit", value="Отправить")
-				label.form__privacy#privacy-check
-					input.form__checkbox#privacy-check(type="checkbox" name='' value='')
+				label.form__privacy
+					input.form__checkbox(type="checkbox" name='' value='')
 					| Я согласен на обработку персональных данных.
 
 
@@ -31,8 +31,8 @@ mixin form-second()
 					.form__field.form__field_message
 						textarea.form__message(name="" placeholder="Сообщение")
 					input.form__submit(type="submit", value="Отправить")
-				label.form__privacy#privacy-check
-					input.form__checkbox#privacy-check(type="checkbox" name='' value='')
+				label.form__privacy
+					input.form__checkbox(type="checkbox" name='' value='')
 					| Я согласен на обработку персональных данных.
 					
 mixin form-third()
@@ -49,6 +49,6 @@ mixin form-third()
 					.form__field.form__field_message
 						textarea.form__message(name="" placeholder="Сообщение")
 					input.form__submit(type="submit", value="Отправить")
-				label.form__privacy#privacy-check
-					input.form__checkbox#privacy-check(type="checkbox" name='' value='')
+				label.form__privacy
+					input.form__checkbox(type="checkbox" name='' value='')
 					| Я согласен на обработку персональных данных.			
