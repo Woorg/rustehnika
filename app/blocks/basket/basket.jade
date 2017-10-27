@@ -1,0 +1,123 @@
+mixin basket()
+	.basket
+		table.basket__table
+			tr.basket__table-row
+				th.basket__table-head.basket__table-head_title наименование
+				th.basket__table-head.basket__table-head_quant кол-во
+				th.basket__table-head.basket__table-head_price цена
+				th.basket__table-head.basket__table-head_del 
+				
+			tr.basket__table-row
+				td.basket__table-col.basket__table-col_prod
+					.basket__image
+						img(src="assets/images/content/basket-img-1.jpg", alt="")
+					.basket__prod
+						a.basket__prod-title(href="#") рысь 125 sport
+						.basket__prod-text Вездеход оснащен мотором 500 см3, обладающим мощностью 32 л.с. 
+				td.basket__table-col.basket__table-col_quant
+					.basket__quant.quant
+						a.quant__button.quant__button_down(href="#down") -
+						input.quant__input(type="text", value="1")
+						a.quant__button.quant__button_up(href="#up") +
+					
+				td.basket__table-col.basket__table-col_price
+					.basket__price 300 000 р.
+					
+				td.basket__table-col.basket__table-col_del
+					a.basket__del(href="#delete") x
+					
+					
+			tr.basket__table-row
+				td.basket__table-col.basket__table-col_prod
+					.basket__image
+						img(src="assets/images/content/basket-img-1.jpg", alt="")
+					.basket__prod
+						a.basket__prod-title(href="#") рысь 125 sport
+						.basket__prod-text Вездеход оснащен мотором 500 см3, обладающим мощностью 32 л.с. 
+				td.basket__table-col.basket__table-col_quant
+					.basket__quant.quant
+						a.quant__button.quant__button_down(href="#down") -
+						input.quant__input(type="text", value="1")
+						a.quant__button.quant__button_up(href="#up") +
+					
+				td.basket__table-col.basket__table-col_price
+					.basket__price 300 000 р.
+					
+				td.basket__table-col.basket__table-col_del
+					a.basket__del(href="#delete") x
+			tr.basket__table-row
+				td.basket__table-col.basket__table-col_prod
+					.basket__image
+						img(src="assets/images/content/basket-img-1.jpg", alt="")
+					.basket__prod
+						a.basket__prod-title(href="#") рысь 125 sport
+						.basket__prod-text Вездеход оснащен мотором 500 см3, обладающим мощностью 32 л.с. 
+				td.basket__table-col.basket__table-col_quant
+					.basket__quant.quant
+						a.quant__button.quant__button_down(href="#down") -
+						input.quant__input(type="text", value="1")
+						a.quant__button.quant__button_up(href="#up") +
+					
+				td.basket__table-col.basket__table-col_price
+					.basket__price 300 000 р.
+					
+				td.basket__table-col.basket__table-col_del
+					a.basket__del(href="#delete") x
+		.basket__total
+			| итого к оплате: 
+			.basket__total-price 900 000 р.
+		.basket__deliv
+			.basket__deliv-title СПОСОБ ДОСТАВКИ
+				a(href="#") (Подробнее о доставке)
+			ul.basket__deliv-list
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Транспортная компания «ПЭК»
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Собственный автотранспорт
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Самовывоз
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Почтой Росии
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Транспортная компания «Деловые линии»
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Транспортная компания «Байкал-Сервис»
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name Ж/Д контейнер
+				li.basket__deliv-item
+					label.basket__deliv-label
+						input.basket__deliv-check(type="radio" name='deliv')
+						.basket__deliv-name EMS Почтой Росии
+		.basket__bottom
+			.basket__payment
+				h2.basket__payment-title способ оплаты
+					a(href="#") (Подробнее об оплате)
+				ul.basket__payment-list
+					li.basket__payment-item
+						label.basket__payment-label
+							input.basket__payment-check(type="radio" name='payment' checked)
+							.basket__payment-name-w
+								.basket__payment-name.basket__payment-name_bank Перечисление на р/с компании по счёту или квитанции
+					li.basket__payment-item
+						label.basket__payment-label
+							input.basket__payment-check(type="radio" name='payment')
+							.basket__payment-name-w
+								.basket__payment-name.basket__payment-name_card Банковской картой
+			
+			.basket__button-w
+				a.basket__button(href="#button") оформить заказ
+				a.basket__question-link(href="#") Возникли вопросы?

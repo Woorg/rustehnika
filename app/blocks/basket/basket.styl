@@ -1,0 +1,460 @@
+.basket
+	display block
+	width 860px
+	clr()
+	+r($t)
+		margin-left -25px
+		margin-right -25px
+		width 720px
+	+r($m)
+		margin-left 0
+		margin-right 0
+		width auto
+	&__table
+		margin-bottom 15px
+		table-layout fixed
+	&__table-row
+		border-bottom 2px solid #c1d9ff
+	&__table-head
+		padding-top 10px
+		padding-bottom 10px
+		text-transform uppercase
+		text-align left
+	&__table-head_title
+		width 455px
+		+r($m)
+			padding-left 10px
+			width 200px
+	&__table-head_quant
+		padding-left 30px
+		width 160px
+		+r($t)
+			padding-left 0
+		+r($m)
+			width 80px
+	&__table-head_price
+		// padding-left 30px
+		width 160px
+		text-align center
+		+r($t)
+			text-align left
+		+r($m)
+			width 110px
+			text-align center
+	&__table-head_del
+		width 80px
+		+r($m)
+			width 50px
+	&__table-col
+		padding-top 20px
+		padding-bottom 20px
+		vertical-align top
+	&__table-col_image
+		width 160px
+
+	&__table-col_prod
+		width 294px
+		+r($m)
+			padding-left 10px
+			width 200px
+	&__table-col_quant
+		width 160px
+		+r($m)
+			width 80px
+	&__table-col_price
+		// padding-left 30px
+		width 160px
+		text-align center
+		+r($t)
+			text-align left
+		+r($m)
+			padding-top 25px
+			padding-left 14px
+			white-space nowrap
+	&__table-col_del
+		width 80px
+		text-align center
+		vertical-align middle
+		+r($m)
+			vertical-align top
+	&__image,
+	&__prod
+		display inline-block
+		vertical-align middle
+	&__image
+		margin-right 30px
+		width 130px
+		height 105px
+		+r($t)
+			margin-right 20px
+		+r($m)
+			display none
+		img
+			max-width 100%
+			height auto
+	&__prod
+		padding-right 30px
+		width 212px
+		+r($m)
+			padding-right 10px
+			width 200px
+	&__prod-title
+		margin-bottom 15px
+		font-family $rB
+		color #008bff
+		text-transform uppercase
+		text-decoration none
+	// &__prod-text
+
+	&__quant
+		margin-right 50px
+		width 112px
+		+r($m)
+			margin-right 0
+			width 80px
+
+	&__price
+		font-size 18px
+		color #ff5361
+	&__del
+		position relative
+		padding 5px 9px 9px
+		display inline-block
+		width 33px
+		height 33px
+		font-family $rR
+		font-size 17px
+		color #ffa9b0
+		text-align center
+		text-decoration none
+		line-height 1
+		border 1px solid #a1abba
+		border-radius 50%
+	&__total
+
+		float right
+		width 380px
+		font-family $a
+		font-weight bold
+		color #000000
+		text-transform uppercase
+		+r($m)
+			width 280px
+	&__total-price
+		padding-left 40px
+		display inline-block
+		vertical-align baseline
+		font-size 18px
+		color #ff5361
+		text-transform none
+
+	&__deliv
+		margin-top 50px
+		margin-left -85px
+		overflow hidden
+		+r($t)
+			margin-left 0
+		+r($m)
+			margin-top 70px
+	&__deliv-title
+		margin-bottom 25px
+		margin-left 85px
+		color #2e3e57
+		text-transform uppercase
+		+r($t)
+			margin-left 0
+		a
+			display block
+			color #a1abba
+			text-transform none
+			text-decoration none
+			&:hover
+				text-decoration underline
+
+	&__deliv-list
+		margin-right -30px
+		font-size 0
+		+r($t)
+			margin-right -20px
+	&__deliv-item
+		margin-right 30px
+		margin-bottom 18px
+		display inline-block
+		vertical-align top
+		width 212px
+		min-height 68px
+		border 2px solid #c1d9ff
+		background-color #f4f8ff
+		+r($t)
+			margin-right 20px
+			width 165px
+		+r($m)
+			width 214px
+	&__deliv-label
+		position relative
+		padding-top 10px
+		padding-left 40px
+		padding-right 10px
+		padding-bottom 10px
+		min-height 68px
+		display block
+		cursor pointer
+	&__deliv-check
+		position absolute
+		top 10px
+		left 10px
+		margin-right 15px
+		margin-bottom 5px
+		float left
+		width 18px
+		height 18px
+		background #FFF
+		&:before,
+		&:after
+			position absolute
+			top 0
+			left 0
+			width 18px
+			height 18px
+			border 2px solid #e6eaf2
+			background-color #ffffff
+			content ""
+		&:checked
+			&:after
+				position absolute
+				z-index 1
+				top 0
+				left 0
+				width 18px
+				height 18px
+				border 2px solid #e6eaf2
+				background-color #ffffff
+				font-size 14px
+				text-align center
+				line-height 18px
+				content "\2713"
+
+	&__deliv-name
+		display inline-block
+		vertical-align top
+		font-family $a
+		font-size 14px
+		font-weight bold
+		color #2e3e57
+		+r($t)
+			font-size 12px
+		+r($m)
+			font-size 14px
+	&__bottom
+		clr()
+		+r($m)
+			position relative
+	&__payment
+		margin-top 50px
+		margin-left -80px
+		width 640px
+		// float left
+		display inline-block
+		vertical-align top
+		+r($t)
+			margin-left 0
+		+r($m)
+			margin-top 30px
+			width auto
+	&__payment-title
+		margin-bottom 25px
+		margin-left 85px
+		color #2e3e57
+		text-transform uppercase
+		+r($t)
+			margin-left 0
+		a
+			display block
+			color #a1abba
+			text-transform none
+			text-decoration none
+			&:hover
+				text-decoration underline
+	&__payment-list
+		font-size 0
+		padding-left 10px
+	&__payment-item
+		margin-right 30px
+		display inline-block
+		vertical-align middle
+		width 280px
+		&:last-child
+			margin-right 0
+		+r($m)
+			width 200px
+	&__payment-label
+		position relative
+		display block
+		min-height 70px
+		cursor pointer
+		background #fff
+	&__payment-name-w
+		position absolute
+		z-index 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		&:before,
+		&:after
+			position absolute
+			top 0
+			left 0
+			right 0
+			bottom 0
+			width 100%
+			height 100%
+			border 2px solid transparent
+			border-radius 40px
+			background-color #ffffff
+			content ""
+	&__payment-check
+		position relative
+		width 100%
+		height 70px
+		&:checked ~ .basket__payment-name-w
+			&:after
+				position absolute
+				z-index 0
+				top -10px
+				left -14px
+				right -10px
+				bottom -10px
+				width 100%
+				height 82px
+				border 2px dashed #ff5361
+				border-radius 40px
+				background-color #ffffff
+				font-size 14px
+				+r($m)
+					height 100%
+					min-height 170px
+	&__payment-name
+		position absolute
+		z-index 1
+		top 0
+		left 0
+		padding-top 12px
+		padding-left 90px
+		padding-right 20px
+		padding-bottom 12px
+		font-size 14px
+		font-family $rR
+		color #000
+		+r($m)
+			padding-top 60px
+		&:after,
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ''
+		&:before
+			width 62px
+			height 62px
+			background-color #e8e8e8
+			border 2px solid #c6c6c6
+			border-radius 50%
+		.basket__payment-label
+			position absolute
+			top 50%
+			left 84px
+			transform translateY(-50%)
+	&__payment-name_bank
+		padding-top 4px
+		+r($m)
+			padding-top 76px
+			padding-left 10px
+		&:after
+			top -1px
+			left 15px
+			retinaSprite($bank_account_group)
+	&__payment-name_card
+		padding-top 20px
+		+r($m)
+			padding-top 78px
+			padding-left 10px
+		&:after
+			top -8px
+			left 7px
+			retinaSprite($plastic_card_group)
+	&__button-w
+		// float right
+		margin-top 110px
+		display inline-block
+		vertical-align top
+		width 296px
+		+r($t)
+			margin-top 30px
+			float right
+		+r($m)
+			margin-top 120px
+			text-align right
+			width 196px
+	&__button
+		margin-bottom 10px
+		@extends .button-big
+		padding-top 26px
+		padding-left 80px
+		padding-right 80px
+		padding-bottom 26px
+		font-family $a
+		font-size 14px
+		font-weight bold
+		text-transform uppercase
+		+r($m)
+			padding-top 15px
+			padding-right 30px
+			padding-left 30px
+			padding-bottom 15px
+	&__question-link
+		display block
+		color #a1abba
+		font-family $a
+		font-weight bold
+		text-decoration none
+		text-align left
+		+r($m)
+			position absolute
+			top 0
+			right 0
+		&:hover
+			text-decoration underline
+.quant
+	position relative
+	width 112px
+	height 36px
+	+r($m)
+		width 80px
+	&__input
+		padding-left 30px
+		padding-right 30px
+		width 100%
+		height 36px
+		color #2e3e57
+		text-align center
+		background-color #f4f8ff
+		border 1px solid #c1d9ff
+
+	&__button
+		position absolute
+		top 0
+		bottom 0
+		line-height 1
+		width 30px
+		height 36px
+		text-decoration none
+		text-align center
+		font-size 18px
+		line-height 36px
+		color #a1abba
+	&__button_up
+		right 0
+	&__button_down
+		left 0
+		line-height 33px

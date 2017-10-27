@@ -1,0 +1,23 @@
+extends /blocks/layout-default/layout-card
+include /blocks/header/header
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/cat-nav/cat-nav
+include /blocks/basket/basket
+
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Рустехника76 - оформление заказа';
+
+block content
+	+header()
+	main.main
+		+breadcrumbs-basket()
+		.main__w
+			h1.main__title снегоходы «буран»
+			.main__content
+				.main__cat-nav
+					+cat-nav()
+				.main__row
+					+basket()
+	+footer()
